@@ -38,6 +38,7 @@ public class Startup(IWebHostEnvironment webHostingEnvironment)
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapContent();
+            endpoints.MapRazorPages();
         });
     }
 }
