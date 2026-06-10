@@ -9,6 +9,14 @@ Solution to show problem with Razor Pages in EPiServer CMS 13.
 ## Steps to reproduce
 
 - dotnet new epi-cms-empty
+- Add endpoints.MapRazorPages() in Startup.cs
+
+		app.UseEndpoints(endpoints =>
+		{
+			endpoints.MapContent();
+			endpoints.MapRazorPages();
+		});
+
 - Create a simple start-page (/Models/Pages/StartPage.cs)
 - Create a Razor Page as start page (/Pages/Index.cshtml)
 - Run the application
