@@ -2,6 +2,10 @@
 
 Solution to show problem with Razor Pages in EPiServer CMS 13.
 
+## Note / temporary fix
+
+At the moment a razor page can not be named "Index". It is reported as a bug. A temporary fix is to name it something else. Name it "Start" instead (just as an example).
+
 ## Prerequisites
 
 - EPiServer.Templates 2.0.1
